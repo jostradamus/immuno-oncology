@@ -609,12 +609,24 @@ body.research-page::before {
     position: fixed;
     top: 0; 
     left: 0; 
-    width: 100vw; 
-    height: 100vh;
+    width: 100%; 
+    height: 100%;
     background: rgba(10, 10, 15, var(--bg-opacity, 0)); /* dynamic overlay to keep text readable on scroll */
     z-index: -1;
     pointer-events: none;
 }
+
+@media (max-width: 768px) {
+    body.research-page .page-header h1 {
+        font-size: 2.8rem !important;
+        padding: 0 1rem;
+    }
+    body.research-page .page-header p {
+        font-size: 1.1rem !important;
+        padding: 0 1.5rem;
+    }
+}
+
 body.research-page .dark-section {
     background: transparent;
 }
