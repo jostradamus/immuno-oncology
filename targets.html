@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neoantigen Targets - ImmunoOncology</title>
+    <meta name="description" content="Explore major shared and personalized neoantigen targets in cancer vaccines.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            padding-top: 150px;
+            text-align: center;
+            min-height: auto;
+            padding-bottom: 50px;
+        }
+        
+        .targets-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .target-category {
+            margin-bottom: 4rem;
+        }
+        
+        .target-category h3 {
+            font-size: 2rem;
+            color: var(--primary);
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hotspot-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+        }
+        
+        .hotspot-table th, .hotspot-table td {
+            padding: 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .hotspot-table th {
+            background: rgba(0, 212, 255, 0.1);
+            color: white;
+            font-weight: 700;
+        }
+        
+        .hotspot-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .badge {
+            background: rgba(112, 0, 255, 0.2);
+            color: #d0a3ff;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border: 1px solid rgba(112, 0, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="logo">Immuno<span class="highlight">Onc</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">Overview</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="index.html#technical">Technical deep-dive</a></li>
+            <li><a href="targets.html" style="color: var(--primary);">Targets</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="index.html#trials">Clinical Trials</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="section page-header">
+        <h1>Major <span class="gradient-text">Neoantigen Targets</span></h1>
+        <p>Exploring the specific genetic mutations driving cancer and how they are targeted by next-generation mRNA vaccines.</p>
+    </div>
+
+    <section class="section dark-section" style="padding-top: 0; min-height: auto; padding-bottom: 100px;">
+        <div class="targets-container">
+            
+            <div class="target-category">
+                <h3>Shared (Public) Neoantigens</h3>
+                <p style="margin-bottom: 2rem;">"Off-the-shelf" vaccines target driver mutations that are frequently shared across multiple patients and various cancer types. Because these genes are critical for tumor survival, the cancer cannot easily downregulate them to escape the immune system.</p>
+                
+                <table class="hotspot-table">
+                    <thead>
+                        <tr>
+                            <th>Gene Target</th>
+                            <th>Common Hotspot Mutations</th>
+                            <th>Primary Associated Cancers</th>
+                            <th>Significance</th>
+                            <th>Notable Clinical Trials</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight: bold; color: var(--text-main);">KRAS</td>
+                            <td>
+                                <span class="badge">G12D</span>
+                                <span class="badge">G12V</span>
+                                <span class="badge">G12C</span>
+                            </td>
+                            <td>Pancreatic, Colorectal, Non-Small Cell Lung Cancer (NSCLC)</td>
+                            <td>One of the most frequently mutated oncogenes. Previously considered "undruggable," these specific point mutations create highly immunogenic peptides.</td>
+                            <td>mRNA-5671 (NCT03948763), ELI-002 (NCT04853017)</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold; color: var(--text-main);">TP53</td>
+                            <td>
+                                <span class="badge">R175H</span>
+                                <span class="badge">R273H</span>
+                                <span class="badge">R248Q</span>
+                            </td>
+                            <td>Breast, Lung, Ovarian, Colorectal (Pan-cancer)</td>
+                            <td>The "Guardian of the Genome". Mutated in over 50% of all human cancers, making it a highly attractive pan-cancer vaccine target.</td>
+                            <td>INO-5401 (NCT03281382)</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold; color: var(--text-main);">BRAF</td>
+                            <td>
+                                <span class="badge">V600E</span>
+                            </td>
+                            <td>Melanoma, Colorectal, Thyroid</td>
+                            <td>A major driver in melanoma. While targeted inhibitors exist, resistance often develops, making vaccines a compelling combination therapy.</td>
+                            <td>Polyepitope vaccines (e.g., NCT02897765)</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold; color: var(--text-main);">PIK3CA</td>
+                            <td>
+                                <span class="badge">H1047R</span>
+                                <span class="badge">E545K</span>
+                            </td>
+                            <td>Breast, Colorectal, Endometrial</td>
+                            <td>Frequent in HR+ breast cancers. Vaccine targeting helps overcome immunosuppressive tumor microenvironments.</td>
+                            <td>Mutated PIK3CA peptide vac (e.g., NCT02436252)</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold; color: var(--text-main);">EGFR</td>
+                            <td>
+                                <span class="badge">L858R</span>
+                                <span class="badge">Exon 19 Del</span>
+                            </td>
+                            <td>Non-Small Cell Lung Cancer (NSCLC)</td>
+                            <td>A primary driver in lung cancer. Vaccines targeting these public neoantigens aim to delay resistance to EGFR tyrosine kinase inhibitors (TKIs).</td>
+                            <td>EGFR-mutant vaccines (e.g., NCT03122106)</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold; color: var(--text-main);">IDH1</td>
+                            <td>
+                                <span class="badge">R132H</span>
+                            </td>
+                            <td>Gliomas (Brain Cancer), AML</td>
+                            <td>A highly uniform mutation occurring early in tumor development, making it an excellent shared target for difficult-to-treat brain tumors.</td>
+                            <td>IDH1-vac (NOA-16, NCT02454634)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="target-category">
+                <h3>Personalized (Private) Neoantigens</h3>
+                <p style="margin-bottom: 2rem;">While shared targets allow for off-the-shelf treatments, the vast majority of cancer mutations are unique to the individual patient ("passenger mutations").</p>
+                
+                <div class="tech-box" style="margin-top: 1rem; margin-bottom: 2rem;">
+                    <h4 style="font-size: 1.2rem; color: var(--primary);">The AI Prediction Pipeline</h4>
+                    <p style="margin-top: 1rem;">For personalized vaccines, the patient's tumor genome and healthy genome are sequenced and compared. AI algorithms (like NetMHCpan) scan thousands of unique mutations to predict which 10-30 neoantigens have the highest affinity for the patient's specific HLA (MHC) molecules. A custom mRNA sequence is then synthesized to encode precisely those targets, creating an individualized "n-of-1" therapeutic.</p>
+                </div>
+
+                <h4 style="margin-bottom: 1rem; color: var(--text-main);">Leading Individualized Neoantigen Therapies (INT)</h4>
+                <table class="hotspot-table">
+                    <thead>
+                        <tr>
+                            <th>Platform / Candidate</th>
+                            <th>Developers</th>
+                            <th>Key Clinical Trials</th>
+                            <th>Target Cancers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight: bold; color: var(--text-main);">mRNA-4157 (V940)</td>
+                            <td>Moderna & Merck</td>
+                            <td>KEYNOTE-942 (Phase 2b), INTerpath (Phase 3)</td>
+                            <td>Melanoma (High-risk), NSCLC</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold; color: var(--text-main);">Autogene cevumeran (BNT122)</td>
+                            <td>BioNTech & Genentech</td>
+                            <td>IMCODE-001 (Phase 1b), Phase 2 adjuvant trials</td>
+                            <td>Pancreatic (PDAC), Colorectal, Melanoma</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="index.html" class="btn secondary-btn">Return to Overview</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ImmunoOnc Research. For educational purposes only.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

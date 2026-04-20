@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mRNA Neoantigen Cancer Vaccines</title>
+    <meta name="description" content="Exploring the cutting-edge of immuno-oncology with mRNA neoantigen cancer vaccines.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="logo">Immuno<span class="highlight">Onc</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">Overview</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="index.html#technical">Technical deep-dive</a></li>
+            <li><a href="targets.html">Targets</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="index.html#trials">Clinical Trials</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Targeting Cancer with <br><span class="gradient-text">mRNA & Neoantigens</span></h1>
+            <p>The cutting-edge of immuno-oncology: Training the immune system to recognize and destroy patient-specific tumor mutations.</p>
+            <div class="hero-buttons">
+                <a href="#technical" class="btn primary-btn">Explore the Science</a>
+                <a href="#how-it-works" class="btn secondary-btn">How it Works</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <img src="hero-bg.png" alt="mRNA interacting with a cell" class="hero-image">
+        </div>
+    </header>
+
+    <section id="how-it-works" class="section">
+        <h2>How It Works</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">1</div>
+                <h3>Sequencing</h3>
+                <p>Patient tumor and healthy tissue are sequenced to identify unique mutations (neoantigens) not present in normal cells.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">2</div>
+                <h3>Prediction</h3>
+                <p>AI algorithms predict which neoantigens are most likely to bind to the patient's MHC molecules and trigger a T-cell response.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">3</div>
+                <h3>Manufacturing</h3>
+                <p>An mRNA sequence encoding the top neoantigens is synthesized and encapsulated in lipid nanoparticles (LNPs).</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">4</div>
+                <h3>Immunization</h3>
+                <p>The vaccine is administered, training dendritic cells to present the neoantigens to T-cells, launching a targeted immune attack.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="technical" class="section dark-section">
+        <h2>Technical Deep-Dive</h2>
+        <div class="technical-grid">
+            <div class="tech-box">
+                <h3>Promising Approaches</h3>
+                <p>Current leading approaches utilize customized mRNA encapsulated in LNPs, often combined with immune checkpoint inhibitors (like anti-PD-1) to overcome tumor microenvironment immunosuppression.</p>
+            </div>
+            <div class="tech-box">
+                <h3>Neoantigen Targets</h3>
+                <p>Ideal targets are clonal neoantigens (present in all tumor cells) with high MHC binding affinity and strong T-cell receptor (TCR) recognition capabilities.</p>
+                <a href="targets.html" class="btn secondary-btn" style="margin-top: 1.5rem; font-size: 0.9rem; padding: 0.8rem 1.5rem;">Explore Major Targets &rarr;</a>
+            </div>
+            <div class="tech-box">
+                <h3>Current Blockers</h3>
+                <p>Major challenges include the turnaround time for manufacturing (vein-to-vein time), tumor heterogeneity, immuno-evasion tactics (e.g., HLA loss), and optimal delivery systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trials" class="section">
+        <h2>Current Clinical Trials</h2>
+        <div class="table-container">
+            <table class="clinical-table">
+                <thead>
+                    <tr>
+                        <th>Phase</th>
+                        <th>Target Cancer</th>
+                        <th>Approach</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Phase IIb</td>
+                        <td>Melanoma (High-risk)</td>
+                        <td>mRNA + Pembrolizumab</td>
+                        <td>Active, Recruiting</td>
+                    </tr>
+                    <tr>
+                        <td>Phase I</td>
+                        <td>Pancreatic Ductal Adenocarcinoma</td>
+                        <td>Individualized mRNA</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Phase I/II</td>
+                        <td>Non-Small Cell Lung Cancer</td>
+                        <td>Shared + Personalized Neoantigens</td>
+                        <td>Recruiting</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="contact-card glass-panel">
+            <h2>Stay Updated</h2>
+            <p>Join our newsletter for the latest breakthroughs in immuno-oncology.</p>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <select required>
+                    <option value="" disabled selected>I am a...</option>
+                    <option value="patient">Patient / Caregiver</option>
+                    <option value="researcher">Researcher / Clinician</option>
+                    <option value="investor">Investor</option>
+                    <option value="general">General Interest</option>
+                </select>
+                <button type="submit" class="btn primary-btn submit-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ImmunoOnc Research. For educational purposes only.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
