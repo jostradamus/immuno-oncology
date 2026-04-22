@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Pipeline - ImmunoOncology</title>
+    <meta name="description" content="Live tracker for mRNA neoantigen cancer vaccine clinical trials and development status.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pipeline-page">
+    <nav class="glass-nav">
+        <div class="logo">Immuno<span class="highlight">Onc</span></div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">Overview</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="index.html#technical">Technical deep-dive</a></li>
+            <li><a href="targets.html">Targets</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="pipeline.html" style="color: var(--primary);">Pipeline</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="index.html#trials">Clinical Trials</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="section dark-section" style="padding-top: 150px;">
+        <div class="pipeline-container">
+            <h1 style="text-align: center; margin-bottom: 1rem;">Clinical <span class="gradient-text">Pipeline Tracker</span></h1>
+            <p style="text-align: center; color: var(--text-muted); max-width: 700px; margin: 0 auto 5rem auto; font-size: 1.2rem;">Tracking the most advanced mRNA neoantigen vaccine candidates from biopsy to breakthrough.</p>
+
+            <!-- Moderna Card -->
+            <div class="pipeline-card">
+                <div class="pipeline-header">
+                    <div>
+                        <div class="company-tag">Moderna / Merck</div>
+                        <h2 style="text-align: left; margin-bottom: 0.5rem; font-size: 2rem;">mRNA-4157 (V940)</h2>
+                    </div>
+                    <div class="status-badge pivotal">Pivotal Phase III</div>
+                </div>
+                <p>An individualized mRNA vaccine encoding up to 34 patient-specific neoantigens, designed to stimulate a T-cell response in combination with pembrolizumab.</p>
+                
+                <div class="pipeline-progress">
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                    <div class="progress-labels">
+                        <span class="label">Phase I</span>
+                        <span class="label">Phase II</span>
+                        <span class="label active">Phase III</span>
+                        <span class="label">Approval</span>
+                    </div>
+                </div>
+
+                <h3>Indications</h3>
+                <div class="indication-list">
+                    <span class="indication-tag">Adjuvant Melanoma</span>
+                    <span class="indication-tag">NSCLC (Lung)</span>
+                    <span class="indication-tag">Renal Cell Carcinoma</span>
+                    <span class="indication-tag">Urothelial Carcinoma</span>
+                </div>
+
+                <div class="pipeline-stats">
+                    <div class="stat-item">
+                        <h4>Lead Efficacy Data</h4>
+                        <p>49% Recurrence Reduction</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Mutation Capacity</h4>
+                        <p>34 Neoantigens</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Status</h4>
+                        <p>Fully Enrolled (Ph III)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BioNTech Card -->
+            <div class="pipeline-card">
+                <div class="pipeline-header">
+                    <div>
+                        <div class="company-tag">BioNTech / Genentech</div>
+                        <h2 style="text-align: left; margin-bottom: 0.5rem; font-size: 2rem;">Autogene cevumeran (BNT122)</h2>
+                    </div>
+                    <div class="status-badge">Phase II</div>
+                </div>
+                <p>Individualized neoantigen vaccine (iNeST) utilizing an uridine-mRNA lipoplex formulation to deliver up to 20 patient-specific antigens.</p>
+                
+                <div class="pipeline-progress">
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 50%;"></div>
+                    </div>
+                    <div class="progress-labels">
+                        <span class="label">Phase I</span>
+                        <span class="label active">Phase II</span>
+                        <span class="label">Phase III</span>
+                        <span class="label">Approval</span>
+                    </div>
+                </div>
+
+                <h3>Indications</h3>
+                <div class="indication-list">
+                    <span class="indication-tag">Pancreatic Cancer (PDAC)</span>
+                    <span class="indication-tag">Colorectal Cancer (MSS-CRC)</span>
+                    <span class="indication-tag">Melanoma</span>
+                    <span class="indication-tag">Solid Tumors (Basket)</span>
+                </div>
+
+                <div class="pipeline-stats">
+                    <div class="stat-item">
+                        <h4>Lead Efficacy Data</h4>
+                        <p>90% Survival (Responders)</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Mutation Capacity</h4>
+                        <p>20 Neoantigens</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Status</h4>
+                        <p>Active Phase II</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gritstone Card -->
+            <div class="pipeline-card">
+                <div class="pipeline-header">
+                    <div>
+                        <div class="company-tag">Gritstone Bio</div>
+                        <h2 style="text-align: left; margin-bottom: 0.5rem; font-size: 2rem;">GRANITE (samRNA)</h2>
+                    </div>
+                    <div class="status-badge">Phase II</div>
+                </div>
+                <p>Utilizing self-amplifying mRNA (samRNA) to deliver personalized neoantigens, designed to trigger a more robust and durable CD8+ T-cell response.</p>
+                
+                <div class="pipeline-progress">
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 40%;"></div>
+                    </div>
+                    <div class="progress-labels">
+                        <span class="label">Phase I</span>
+                        <span class="label active">Phase II</span>
+                        <span class="label">Phase III</span>
+                        <span class="label">Approval</span>
+                    </div>
+                </div>
+
+                <h3>Indications</h3>
+                <div class="indication-list">
+                    <span class="indication-tag">Colorectal Cancer</span>
+                    <span class="indication-tag">Gastroesophageal Cancer</span>
+                    <span class="indication-tag">Lung Cancer (NSCLC)</span>
+                </div>
+
+                <div class="pipeline-stats">
+                    <div class="stat-item">
+                        <h4>Technology</h4>
+                        <p>Self-Amplifying mRNA</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Efficacy Marker</h4>
+                        <p>ctDNA Clearance</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Status</h4>
+                        <p>Active Clinical Study</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Geneos Card -->
+            <div class="pipeline-card">
+                <div class="pipeline-header">
+                    <div>
+                        <div class="company-tag">Geneos Therapeutics</div>
+                        <h2 style="text-align: left; margin-bottom: 0.5rem; font-size: 2rem;">GNOS-PV02 (DNA)</h2>
+                    </div>
+                    <div class="status-badge">Phase I/II</div>
+                </div>
+                <p>Personalized DNA-based immunotherapy platform providing comparison for mRNA platforms in long-term T-cell persistence.</p>
+                
+                <div class="pipeline-progress">
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 30%;"></div>
+                    </div>
+                    <div class="progress-labels">
+                        <span class="label active">Phase I/II</span>
+                        <span class="label">Phase III</span>
+                        <span class="label">Approval</span>
+                    </div>
+                </div>
+
+                <h3>Indications</h3>
+                <div class="indication-list">
+                    <span class="indication-tag">Hepatocellular Carcinoma (HCC)</span>
+                    <span class="indication-tag">Glioblastoma</span>
+                </div>
+
+                <div class="pipeline-stats">
+                    <div class="stat-item">
+                        <h4>Lead Efficacy Data</h4>
+                        <p>5+ Year Survival (Ph I)</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Mutation Capacity</h4>
+                        <p>40+ Neoantigens</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Status</h4>
+                        <p>Data Readout Expected</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ImmunoOnc Research. For educational purposes only.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
