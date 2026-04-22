@@ -596,18 +596,16 @@ footer {
 }
 
 /* --- Research Page Fullscreen Background --- */
-.bg-zoom-container {
+.bg-fixed-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh; /* Using 100vh on a fixed element is stable for backgrounds */
     background-image: url('research-hero.png');
     background-size: cover;
     background-position: center;
     z-index: -2;
-    transform-origin: center center;
-    will-change: transform;
     pointer-events: none;
 }
 

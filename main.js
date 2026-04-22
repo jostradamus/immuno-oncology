@@ -72,9 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Research Page dynamic background fade & zoom
+    // Research Page dynamic background fade
     if (document.body.classList.contains('research-page')) {
-        const bgZoom = document.querySelector('.bg-zoom-container');
         window.addEventListener('scroll', () => {
             const scrollY = window.scrollY;
             const windowHeight = window.innerHeight;
@@ -83,13 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
             let opacity = (scrollY / (windowHeight * 0.8)) * 0.85;
             opacity = Math.min(0.85, Math.max(0, opacity));
             document.body.style.setProperty('--bg-opacity', opacity);
-
-            // Smooth zoom effect
-            if (bgZoom) {
-                // Scales from 1.0 to 1.15 as you scroll down
-                const zoomFactor = 1 + (scrollY / (windowHeight * 1.5)) * 0.15;
-                bgZoom.style.transform = `scale(${Math.min(1.3, zoomFactor)})`;
-            }
         });
     }
 
