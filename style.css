@@ -688,7 +688,7 @@ body.research-page .dark-section {
 }
 
 .tech-list li::before {
-    content: '?';
+    content: '\2192';
     color: var(--primary);
     font-weight: bold;
 }
