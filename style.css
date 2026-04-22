@@ -596,11 +596,22 @@ footer {
 }
 
 /* --- Research Page Fullscreen Background --- */
-body.research-page {
+.bg-zoom-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('research-hero.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    z-index: -2;
+    transform-origin: center center;
+    will-change: transform;
+    pointer-events: none;
+}
+
+body.research-page {
     position: relative;
     z-index: 0;
 }
