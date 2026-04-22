@@ -45,27 +45,73 @@
     </header>
 
     <section id="how-it-works" class="section">
-        <h2>How It Works</h2>
-        <div class="cards-container">
-            <div class="card">
+        <h2 style="margin-bottom: 5rem;">The Precision Pipeline</h2>
+        
+        <!-- Step 1: Identification -->
+        <div class="staggered-section">
+            <div class="staggered-content">
                 <div class="card-icon">1</div>
-                <h3>Sequencing</h3>
-                <p>Patient tumor and healthy tissue are sequenced to identify unique mutations (neoantigens) not present in normal cells.</p>
+                <h3 style="font-size: 2.2rem; margin-bottom: 1.5rem;">Target Identification</h3>
+                <p style="font-size: 1.2rem; color: white; margin-bottom: 2rem;">We begin by performing <strong>Next-Generation Sequencing (NGS)</strong> on both the patient's tumor biopsy and healthy tissue. By comparing the two, we isolate somatic mutations unique to the cancer.</p>
+                <ul class="tech-list">
+                    <li>WES (Whole Exome Sequencing)</li>
+                    <li>Bioinformatic Mutation Calling</li>
+                    <li>Somatic vs. Germline Filtering</li>
+                </ul>
             </div>
-            <div class="card">
+            <div class="staggered-visual">
+                <img src="identification-diagram.png" alt="Genomic identification diagram" class="staggered-image">
+            </div>
+        </div>
+
+        <!-- Step 2: Prediction -->
+        <div class="staggered-section">
+            <div class="staggered-content">
                 <div class="card-icon">2</div>
-                <h3>Prediction</h3>
-                <p>AI algorithms predict which neoantigens are most likely to bind to the patient's MHC molecules and trigger a T-cell response.</p>
+                <h3 style="font-size: 2.2rem; margin-bottom: 1.5rem;">In Silico Prediction</h3>
+                <p style="font-size: 1.2rem; color: white; margin-bottom: 2rem;">Not all mutations make good targets. We use advanced AI and machine learning models to predict which neoantigens will be successfully processed and presented on the patient's specific <strong>HLA alleles</strong>.</p>
+                <ul class="tech-list">
+                    <li>MHC Class I & II Binding Affinity</li>
+                    <li>Proteasomal Cleavage Prediction</li>
+                    <li>TCR Recognition Probability</li>
+                </ul>
             </div>
-            <div class="card">
+            <div class="staggered-visual">
+                <img src="prediction-diagram.png" alt="AI Prediction diagram" class="staggered-image">
+            </div>
+        </div>
+
+        <!-- Step 3: Synthesis -->
+        <div class="staggered-section">
+            <div class="staggered-content">
                 <div class="card-icon">3</div>
-                <h3>Manufacturing</h3>
-                <p>An mRNA sequence encoding the top neoantigens is synthesized and encapsulated in lipid nanoparticles (LNPs).</p>
+                <h3 style="font-size: 2.2rem; margin-bottom: 1.5rem;">LNP Synthesis</h3>
+                <p style="font-size: 1.2rem; color: white; margin-bottom: 2rem;">Once the top 10-30 neoantigens are selected, we synthesize the corresponding mRNA sequence. This "blueprint" is then encapsulated in <strong>Lipid Nanoparticles (LNPs)</strong> for stable delivery.</p>
+                <ul class="tech-list">
+                    <li>In Vitro Transcription (IVT)</li>
+                    <li>PEGylated Lipid Formulation</li>
+                    <li>Endosomal Escape Optimization</li>
+                </ul>
             </div>
-            <div class="card">
+            <div class="staggered-visual">
+                <img src="lnp-diagram.png" alt="LNP diagram" class="staggered-image">
+            </div>
+        </div>
+
+        <!-- Step 4: Activation -->
+        <div class="staggered-section">
+            <div class="staggered-content">
                 <div class="card-icon">4</div>
-                <h3>Immunization</h3>
-                <p>The vaccine is administered, training dendritic cells to present the neoantigens to T-cells, launching a targeted immune attack.</p>
+                <h3 style="font-size: 2.2rem; margin-bottom: 1.5rem;">Immunological Activation</h3>
+                <p style="font-size: 1.2rem; color: white; margin-bottom: 2rem;">The vaccine is administered, training dendritic cells to present the neoantigens to <strong>Cytotoxic T-cells</strong>. This launches a precise, systemic attack against any cell expressing the target mutations.</p>
+                <ul class="tech-list">
+                    <li>Dendritic Cell Cross-Presentation</li>
+                    <li>Antigen-Specific T-cell Expansion</li>
+                    <li>Systemic Tumor Surveillance</li>
+                </ul>
+            </div>
+            <div class="staggered-visual">
+                <img src="activation-diagram.png" alt="T-cell activation diagram" class="staggered-image">
             </div>
         </div>
     </section>

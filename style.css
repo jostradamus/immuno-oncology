@@ -639,3 +639,64 @@ body.research-page::before {
 body.research-page .dark-section {
     background: transparent;
 }
+
+/* Staggered Layout */
+.staggered-section {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 8rem;
+}
+
+.staggered-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.staggered-content {
+    flex: 1;
+}
+
+.staggered-visual {
+    flex: 1;
+    position: relative;
+}
+
+.staggered-image {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.2);
+    transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
+}
+
+.staggered-section:hover .staggered-image {
+    transform: scale(1.02);
+    box-shadow: 0 0 50px rgba(112, 0, 255, 0.4);
+}
+
+.tech-list {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.tech-list li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.tech-list li::before {
+    content: '?';
+    color: var(--primary);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .staggered-section, .staggered-section:nth-child(even) {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+}
